@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Loginapp</string>
+    <string name="email">Enter your email id</string>
+    <string name="password">Enter password</string>
+    <string name="register">New user? Register here!</string>
+    <string name="login">Sign in</string>
+    <string name="warn_text">Incorrect email format. Please enter valid email id (eg: example@domain.com.</string>
+    <string name="welcome">Welcome</string>
+    <string name="blank_password">Password cannot be blank</string>
+    <string name="blank_email">Email cannot be blank</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_loginpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/collogin"
+    tools:context="com.acadgild.anup.loginapp.loginpage">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:inputType="textEmailAddress"
+        android:background="@color/colloginfield"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/email"
+        android:textSize="20sp"
+        android:id="@+id/etusername"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+        android:background="@color/colloginfield"
+        android:ems="10"
+        android:gravity="center"
+        android:id="@+id/etpassword"
+        android:hint="@string/password"
+        android:textSize="20sp"
+        android:layout_below="@+id/etusername"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/warn_text"
+        android:textColor="#ff0000"
+        android:id="@+id/warningText"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpassword"
+        android:layout_alignParentStart="true" />
+
+    <Button
+            android:text="@string/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/warningText"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp"
+            android:id="@+id/butlogin"
+            android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etsignup"
+        android:layout_below="@+id/butlogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+
+
+</RelativeLayout>
